@@ -3,7 +3,7 @@ import numpy as np
 import gym
 import gym_minigrid
 import pickle
-import matplotlib.pyplot as plt
+import matplotlib.pylab as plt
 import imageio
 import random
 
@@ -163,4 +163,21 @@ def draw_gif_from_seq(seq, env, path='./gif/doorkey.gif'):
             writer.append_data(img)
     print('GIF is written to {}'.format(path))
     return
+
+def draw_valuefunction_path(seq, env, value_function, path = './results/partB/'):
+    '''
     
+    '''
+    img = env.render('rgb_array', tile_size = 32)
+    plt.imshow(img)
+    for i in range(len(seq)):
+        img = env.render('rgb_array', tile_size = 32)
+        step(env,seq[i])
+        plt.imshow(img)
+        plt.title(f'Value function at current state : {value_function[i]}')
+        plt.savefig(path + f'img_{i}.png', format = 'png', bbox_inches = 'tight')
+    print(f'Images are saved to {path}')
+    return 
+
+
+            
