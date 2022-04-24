@@ -353,6 +353,6 @@ def partB():
 
 if __name__ == '__main__':
     #example_use_of_gym_env()
-    partA()
-    # partB()
+    # partA()
+    partB()
     
