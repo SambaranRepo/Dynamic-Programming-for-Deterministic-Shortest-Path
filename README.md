@@ -93,35 +93,47 @@ Results are present in results/partA/ for part A environments and results/partB/
 ## Results
 ### Part A
 
-#### | doorkey-5x5-normal |
-|:----------------:|
+| doorkey-5x5-normal |
+<p align='center'>
 <img src="results/partA/3/ezgif.com-gif-maker.gif"> 
-
+</p>
 | doorkey-6x6-normal   |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/5/ezgif.com-gif-maker.gif"> 
-
+</p>
 
 | doorkey-6x6-direct |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/1/ezgif.com-gif-maker.gif"> 
-
+</p>
 
 | doorkey-6x6-shortcut |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/6/ezgif.com-gif-maker (1).gif"> 
-
+</p>
 
 | doorkey-8x8-normal   |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/2/ezgif.com-gif-maker (1).gif"> 
-
+</p>
 
 | doorkey-8x8-direct |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/4/ezgif.com-gif-maker (1).gif"> 
-
+</p>
 
 | doorkey-8x8-shortcut |
-|:----------------:|
+<p align='center'>
 <img src="results/partA/7/ezgif.com-gif-maker.gif"> 
+</p>
+
+### Part B
+| Sample environment 1 |
+<p align='center'>
+<img src="results/partB/1/ezgif.com-gif-maker.gif"> 
+</p>
+
+| Sample environment 2 |
+<p align='center'>
+<img src="results/partB/9/ezgif.com-gif-maker.gif"> 
+</p>
