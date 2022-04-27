@@ -137,3 +137,8 @@ Results are present in results/partA/ for part A environments and results/partB/
 <p align='center'>
 <img src="results/partB/9/ezgif.com-gif-maker.gif"> 
 </p>
+
+| Sample environment 3 |
+<p align='center'>
+<img src="results/partB/5/ezgif.com-gif-maker.gif"> 
+</p>
