@@ -87,8 +87,8 @@ Usage :
 
 Results are present in results/partA/ for part A environments and results/partB/ for partB environments. GIF's of the shortest paths are in gif/partA and gif/partB for the partA and partB environments respectively. 
 
-## Technical report : 
-* [Sambaran Ghosal. "Dynamic Programming for Deterministic Shortest Path problem" March 2022](report/Dynamic Programming for DSP.pdf)
+## Technical report
+* [Sambaran Ghosal. "Dynamic Programming for Deterministic Shortest Path problem" April 2022](report/Dynamic_Programming_DSP.pdf)
 
 ## Results
 ### Part A
