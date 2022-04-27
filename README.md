@@ -26,6 +26,8 @@ There are 7 test scenes you have to test and include in the report.
 <pre>conda env create -f ece276b.yaml </pre>
 2. Activate the conda environment. 
 <pre>conda activate ece276b </pre>
+3. Although pip installation should install all dependencies, if there is some error message, install dependencies using the requirements.txt file. 
+<pre>python3 -m pip install -r requirements.txt </pre>
 
 
 ## Instructions to run
