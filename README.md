@@ -1,7 +1,7 @@
-# ECE276B SP21 HW1 Programming Assignment
+# Dynamic Programming for Deterministic Shortest Path
 
 ## Overview
-In this assignment, you are required to implement dynammic programming for the Door-Key problems.
+In this assignment, we are required to implement dynammic programming for the Door-Key problems.
 <p align="center">
 <img src="gif/doorkey.gif" alt="Door-key Problem" width="500"/></br>
 </p>
@@ -20,19 +20,16 @@ There are 7 test scenes you have to test and include in the report.
 |:----------------:|:------------------:|:----------------:|
 | <img src="imgs/doorkey-8x8-normal.png"> | <img src="imgs/doorkey-8x8-direct.png" > |<img src="imgs/doorkey-8x8-shortcut.png" >|
 
-## Installation
+## Environment Setup
 
-- Install [gym-minigrid](https://github.com/maximecb/gym-minigrid)
-- Install dependencies
-```bash
-pip install -r requirements.txt
-```
+1. Create a cond environment using the ece276b.yaml file provided. 
+<pre>conda env create -f ece276b.yaml </pre>
+2. Activate the conda environment. 
+<pre>conda activate ece276b </pre>
 
-## Instruction
-### 1. doorkey.py
-You will need to modify **doorkey.py** as the main entrance.
 
-### 2. utils.py
+## Instructions to run
+### 1. utils.py
 You might find some useful tools in utils.py
 - **step()**: Move your agent
 - **generate_random_env()**: Generate a random environment for debugging
@@ -41,5 +38,90 @@ You might find some useful tools in utils.py
 - **plot_env()**: For a quick visualization of your current env, including: agent, key, door, and the goal
 - **draw_gif_from_seq()**: Draw and save a gif image from a given action sequence.
 
-### 3. example.py
+### 2. example.py
 The example.py shows you how to interact with the utilities in utils.py, and also gives you some examples of interacting with gym-minigrid directly.
+Usage : 
+<pre>python3 examples.py </pre>
+
+### 3. doorkey_A.py
+This script is used to implement Dynamic Programming on the environments specified in Part A. There are seven different parts in A, and this code will create the shortest paths for each of the environments.
+Usage: 
+<pre>python3 doorkey_A.py </pre>
+
+### 4. doorkey_B.py
+This script is used to implement Dynamic Programming on the environments specified in Part B. This program creates a single policy function for all the maps in Part B and creates the shortest path for any environment in this from the single policy function. 
+Usage : 
+<pre>python3 doorkey_B.py </pre>
+
+## Directory
+<pre>
+├── envs
+│   └── random_envs
+├── gif
+│   ├── partA
+│   └── partB
+├── imgs
+├── __pycache__
+├── report
+└── results
+    ├── partA
+    │   ├── 1
+    │   ├── 2
+    │   ├── 3
+    │   ├── 4
+    │   ├── 5
+    │   ├── 6
+    │   ├── 7
+    │   └── 8
+    └── partB
+        ├── 1
+        ├── 2
+        ├── 3
+        ├── 4
+        ├── 5
+        ├── 6
+        ├── 7
+        ├── 8
+        └── 9
+</pre>
+
+Results are present in results/partA/ for part A environments and results/partB/ for partB environments. GIF's of the shortest paths are in gif/partA and gif/partB for the partA and partB environments respectively. 
+
+## Technical report : 
+* [Sambaran Ghosal. "Dynamic Programming for Deterministic Shortest Path problem" March 2022](report/Dynamic Programming for DSP.pdf)
+
+## Results
+### Part A
+
+#### | doorkey-5x5-normal |
+|:----------------:|
+<img src="results/partA/3/ezgif.com-gif-maker.gif"> 
+
+| doorkey-6x6-normal   |
+|:----------------:|
+<img src="results/partA/5/ezgif.com-gif-maker.gif"> 
+
+
+| doorkey-6x6-direct |
+|:----------------:|
+<img src="results/partA/1/ezgif.com-gif-maker.gif"> 
+
+
+| doorkey-6x6-shortcut |
+|:----------------:|
+<img src="results/partA/6/ezgif.com-gif-maker (1).gif"> 
+
+
+| doorkey-8x8-normal   |
+|:----------------:|
+<img src="results/partA/2/ezgif.com-gif-maker (1).gif"> 
+
+
+| doorkey-8x8-direct |
+|:----------------:|
+<img src="results/partA/4/ezgif.com-gif-maker (1).gif"> 
+
+
+| doorkey-8x8-shortcut |
+|:----------------:|
+<img src="results/partA/7/ezgif.com-gif-maker.gif"> 
